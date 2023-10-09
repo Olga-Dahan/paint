@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script defer src="assets/js/myjs.js"></script>
+    <link rel="stylesheet" href="assets/styles/style.css" />
+  </head>
+  <body>
+    <br />
+    <br />
+    <div>
+        <button class="red" onclick="setColor('red')"></button>
+        <button class="green" onclick="setColor('green')"></button>
+        <button class="blue" onclick="setColor('blue')"></button>
+        <button class="yellow" onclick="setColor('yellow')"></button>
+        <button class="purple" onclick="setColor('purple')"></button>
+        <button class="turquoise" onclick="setColor('turquoise')"></button>
+        <button onclick="setLineWidth('1')">1</button>
+        <button onclick="setLineWidth('2')">2</button>
+        <button onclick="setLineWidth('3')">3</button>
+        <button onclick="setLineWidth('4')">4</button>
+        <button onclick="setLineWidth('5')">5</button>
+    </div>
+    <br />
+    <div>
+        <canvas
+            id="myCanvas"
+            width="640"
+            height="480"
+            onmousemove="mouseDraw(event);"
+            onmouseenter="newPosition(event);"
+            onmousedown="newPosition(event)"
+        >
+        </canvas>
+    </div>
+  </body>
+</html>
